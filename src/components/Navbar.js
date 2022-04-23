@@ -60,9 +60,15 @@ align-self: center;
 border-style: none;
 margin: 50% 0;
 `
+const Button1 = styled.button`
+background: inherit;
+align-self: center;
+border-style: none;
+margin: 10px 0;
+`
 const BurgerNav = styled.div`
 height: 30rem;
-align-items: center;
+align-items: center;align-items: center;
 padding-top: 10px;
 width: 50%;
 position: fixed;
@@ -141,7 +147,7 @@ return () => {
 
 {(toggleMenu || screenWidth > 800) && (
 <BurgerNav>
-<Button onClick={toggleNav}><MenuIcon icon={faTimes} size="sm"  /></Button>
+<Button1 onClick={toggleNav}><MenuIcon icon={faTimes} size="sm"  /></Button1>
 
   <Itemss to='/'>Home</Itemss>
   <Itemss to='/About'>About</Itemss>
